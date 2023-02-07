@@ -1,0 +1,8 @@
+{
+    "id" : "1",
+    "title": "Cảnh báo mưa lũ",
+    "content": "Cảnh báo mưa lũ do cơn bão số 10",
+    "level": "Khẩn cấp",
+    "category": "Thời tiết",
+    "image": "url/image"
+}
