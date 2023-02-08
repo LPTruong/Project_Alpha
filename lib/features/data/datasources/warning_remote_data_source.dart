@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'dart:html';
+
 
 import 'package:dartz/dartz.dart';
 import 'package:project_alpha/core/error/exception.dart';
@@ -83,11 +83,11 @@ class WarningRemoteDataSourceImpl implements WarningRemoteDataSource {
       'author': warningModel.author,
     };
 
-    final response = await client.patch(
+    final response = await client.put(
       Uri.parse(BASE_URL + "/warnings/$warningId"),
       body: body,
     );
-    
+
     if (response.statusCode == 200) {
       return Future.value(unit);
     } else {

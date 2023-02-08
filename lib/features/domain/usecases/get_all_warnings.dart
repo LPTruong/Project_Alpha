@@ -4,10 +4,10 @@ import 'package:project_alpha/features/domain/repositories/warnings_repository.d
 
 import '../../../core/error/failures.dart';
 
-class GetAllWarnings{
-  final WarningRepository repository;
+class GetAllWarningsUsecase{
+  final WarningsRepository repository;
 
-  GetAllWarnings(this.repository);
+  GetAllWarningsUsecase(this.repository);
 
   Future<Either<Failure, List<Warning>>> call() async {
     return await repository.getAllWarnings();

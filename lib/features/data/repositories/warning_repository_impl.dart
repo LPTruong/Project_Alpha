@@ -12,12 +12,12 @@ import '../datasources/warning_remote_data_source.dart';
 
 typedef Future<Unit> DeleteOrUpdateOrAddWarning();
 
-class WarningRepositoryImpl implements WarningRepository {
+class WarningsRepositoryImpl implements WarningsRepository {
   final WarningRemoteDataSource remoteDataSource;
   final WarningLocalDataSource localDataSource;
   final NetworkInfo networkInfo;
 
-  WarningRepositoryImpl(
+  WarningsRepositoryImpl(
       {required this.remoteDataSource,
       required this.localDataSource,
       required this.networkInfo});

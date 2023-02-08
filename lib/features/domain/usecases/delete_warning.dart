@@ -4,7 +4,7 @@ import 'package:project_alpha/core/error/failures.dart';
 import '../repositories/warnings_repository.dart';
 
 class DeleteWarningUseCase {
-  final WarningRepository repository;
+  final WarningsRepository repository;
   
   DeleteWarningUseCase(this.repository);
 

@@ -5,7 +5,7 @@ import '../../../core/error/failures.dart';
 import '../entities/warning.dart';
 
 class UpdateWarningUseCase {
-  final WarningRepository repository;
+  final WarningsRepository repository;
 
   UpdateWarningUseCase(this.repository);
 
