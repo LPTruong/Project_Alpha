@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/widgets.dart';
 
 class Warning extends Equatable {
-  final String id;
+  final String? id;
   final String title;
   final String content;
   final String level;
@@ -13,7 +13,7 @@ class Warning extends Equatable {
 
 
   const Warning({
-    required this.id,
+    this.id,
     required this.title,
     required this.content,
     required this.level,

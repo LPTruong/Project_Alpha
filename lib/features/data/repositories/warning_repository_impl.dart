@@ -45,7 +45,7 @@ class WarningsRepositoryImpl implements WarningsRepository {
   @override
   Future<Either<Failure, Unit>> addWarning(Warning warning) async {
     final WarningModel warningModel = WarningModel(
-      id: warning.id,
+     
       title: warning.title,
       content: warning.content,
       level: warning.level,

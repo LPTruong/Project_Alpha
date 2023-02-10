@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "762bc632-07d0-4572-a712-775fd837ce43",
+		"name": "Upload Image",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19368528"
+	},
+	"item": [
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files[0]",
+							"type": "file",
+							"src": "/Users/nghiale98/Downloads/pagalo.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.ioc-cloud.com/api/1.0/public/filesUploadApi",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"ioc-cloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"1.0",
+						"public",
+						"filesUploadApi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

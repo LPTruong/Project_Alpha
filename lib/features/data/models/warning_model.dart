@@ -2,7 +2,7 @@ import 'package:project_alpha/features/domain/entities/warning.dart';
 
 class WarningModel extends Warning {
   const WarningModel(
-      {required String id,
+      { String? id,
       required String title,
       required String content,
       required String level,

@@ -40,7 +40,7 @@ class WarningRemoteDataSourceImpl implements WarningRemoteDataSource {
   @override
   Future<Unit> addWarning(WarningModel warningModel) async {
     final body = {
-      'id': warningModel.id,
+
       'title': warningModel.title,
       'content': warningModel.content,
       'level': warningModel.level,
@@ -51,7 +51,7 @@ class WarningRemoteDataSourceImpl implements WarningRemoteDataSource {
     };
     final response =
         await client.post(Uri.parse(BASE_URL + "/warnings/"), body: body);
-    if (response.statusCode == 201) {
+    if (response.statusCode == 201) { 
       return Future.value(unit);
     } else {
       throw ServerException();
@@ -73,7 +73,6 @@ class WarningRemoteDataSourceImpl implements WarningRemoteDataSource {
   Future<Unit> updateWarning(WarningModel warningModel) async {
     final warningId = warningModel.id;
     final body = {
-      'id': warningModel.id,
       'title': warningModel.title,
       'content': warningModel.content,
       'level': warningModel.level,
